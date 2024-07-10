@@ -33,16 +33,20 @@
     "@medusajs/file-local": "latest",
     "@medusajs/medusa": "1.20.7",
     "@tanstack/react-query": "4.22.0",
+    "@urql/core": "^5.0.4",
+    "axios": "^1.7.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "16.3.1",
     "express": "^4.17.2",
+    "graphql-request": "^7.1.0",
     "medusa-fulfillment-manual": "latest",
     "medusa-interfaces": "latest",
     "medusa-payment-manual": "latest",
     "medusa-payment-stripe": "latest",
     "prism-react-renderer": "^2.0.4",
-    "typeorm": "^0.3.16"
+    "typeorm": "^0.3.16",
+    "urql": "^4.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",

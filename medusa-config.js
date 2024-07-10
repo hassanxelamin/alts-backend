@@ -22,9 +22,7 @@ try {
 } catch (e) {}
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS =
-  process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
-
+const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
@@ -81,8 +79,8 @@ const projectConfig = {
   jwt_secret: process.env.JWT_SECRET || "supersecret",
   cookie_secret: process.env.COOKIE_SECRET || "supersecret",
   store_cors: STORE_CORS,
-  database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
+  database_url: DATABASE_URL,
   database_extra: { ssl: { rejectUnauthorized: false } },
   redis_url: REDIS_URL
 };
