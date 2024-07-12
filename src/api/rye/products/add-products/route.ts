@@ -27,16 +27,20 @@ import {
   
       const productRequests: Promise<OperationResult<any, AnyVariables>>[] = [];
       for (const { url, marketplace } of productUrls) {
-        productRequests.push(
-          ryeClient
-            .mutation(GET_PRODUCT_BY_URL, {
-              input: {
-                url,
-                marketplace,
-              },
-            })
-            .toPromise()
-        );
+        try {
+          productRequests.push(
+            ryeClient
+              .mutation(GET_PRODUCT_BY_URL, {
+                input: {
+                  url,
+                  marketplace,
+                },
+              })
+              .toPromise()
+          );
+        } catch (error) {
+          console.log(error)
+        }
       }
   
       const productIds = (await Promise.all(productRequests)).map((product) => ({
