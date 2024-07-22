@@ -4,6 +4,7 @@ import { ProductService, type SubscriberConfig, type SubscriberArgs, type Config
 export default async function catalogUpdateHandler({ data, eventName, container, pluginOptions, }: SubscriberArgs) {
     const configModule: ConfigModule = container.resolve("configModule")
     // await syncProductsWorkflow.run({ input: data })
+    // VECTORIZE NEW PRODUCTS HERE.
     console.log(data);
 }
 
