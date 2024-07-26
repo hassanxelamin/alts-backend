@@ -32,7 +32,7 @@
     "@medusajs/event-bus-redis": "^1.8.13",
     "@medusajs/file-local": "latest",
     "@medusajs/medusa": "1.20.7",
-    "@tanstack/react-query": "4.22.0",
+    "@tanstack/react-query": "5.51.14",
     "@urql/core": "^5.0.4",
     "axios": "^1.7.2",
     "body-parser": "^1.19.0",
